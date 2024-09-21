@@ -1,0 +1,73 @@
+﻿@model MiniSchool.Models.User
+
+<section class="vh-100 bg-light-blue">
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="row w-100 d-flex justify-content-center align-items-center">
+
+            <!-- Image Section -->
+           
+
+            <!-- Form Section -->
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                {
+                    <div class="form-container p-5 shadow-lg">
+                        <!-- Email input -->
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control form-control-lg", placeholder = "Enter a valid email address", required = "required" })
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-group mb-4">
+                            @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control form-control-lg", placeholder = "Enter your password", required = "required" })
+                        </div>
+
+                        <!-- Login Button -->
+                        <div class="d-flex justify-content-center mt-4">
+                            <button type="submit" class="btn  btn-lg btn-block custom-btn">Login</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS -->
+<style>
+    /* Custom Background Color */
+    .bg-light-blue {
+        background: gray;
+    }
+
+    /* Image styling */
+    .custom-img {
+        width: 100%;
+        max-height: 350px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Form container styling */
+    .form-container {
+        background-color: white;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+
+    /* Custom button styling */
+    .custom-btn {
+        padding: 10px 20px;
+        border-radius: 30px;
+        transition: background-color gray;
+    }
+
+    .custom-btn:hover {
+        background-color: #0056b3;
+    }
+
+ 
+</style>

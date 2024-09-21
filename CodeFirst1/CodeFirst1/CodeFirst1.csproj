@@ -131,26 +131,36 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409171100232_CreateTables.cs" />
-    <Compile Include="Migrations\202409171100232_CreateTables.Designer.cs">
-      <DependentUpon>202409171100232_CreateTables.cs</DependentUpon>
+    <Compile Include="Migrations\202409180903301_addTables.cs" />
+    <Compile Include="Migrations\202409180903301_addTables.Designer.cs">
+      <DependentUpon>202409180903301_addTables.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409172115361_AddTables.cs" />
-    <Compile Include="Migrations\202409172115361_AddTables.Designer.cs">
-      <DependentUpon>202409172115361_AddTables.cs</DependentUpon>
+    <Compile Include="Migrations\202409181355280_updateTable.cs" />
+    <Compile Include="Migrations\202409181355280_updateTable.Designer.cs">
+      <DependentUpon>202409181355280_updateTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409172117011_AddAssignmentsTable.cs" />
-    <Compile Include="Migrations\202409172117011_AddAssignmentsTable.Designer.cs">
-      <DependentUpon>202409172117011_AddAssignmentsTable.cs</DependentUpon>
+    <Compile Include="Migrations\202409181359041_updateTables.cs" />
+    <Compile Include="Migrations\202409181359041_updateTables.Designer.cs">
+      <DependentUpon>202409181359041_updateTables.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202409172128269_UpdateStudentsTable.cs" />
-    <Compile Include="Migrations\202409172128269_UpdateStudentsTable.Designer.cs">
-      <DependentUpon>202409172128269_UpdateStudentsTable.cs</DependentUpon>
+    <Compile Include="Migrations\202409181405439_oneTomanyTables.cs" />
+    <Compile Include="Migrations\202409181405439_oneTomanyTables.Designer.cs">
+      <DependentUpon>202409181405439_oneTomanyTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409181409168_updateTableeesss.cs" />
+    <Compile Include="Migrations\202409181409168_updateTableeesss.Designer.cs">
+      <DependentUpon>202409181409168_updateTableeesss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202409191023535_InitialCreate.cs" />
+    <Compile Include="Migrations\202409191023535_InitialCreate.Designer.cs">
+      <DependentUpon>202409191023535_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Assignments.cs" />
+    <Compile Include="Models\Assignment.cs" />
+    <Compile Include="Models\Course.cs" />
     <Compile Include="Models\MyDbContext.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentDetail.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -237,17 +247,23 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202409171100232_CreateTables.resx">
-      <DependentUpon>202409171100232_CreateTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409180903301_addTables.resx">
+      <DependentUpon>202409180903301_addTables.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202409172115361_AddTables.resx">
-      <DependentUpon>202409172115361_AddTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409181355280_updateTable.resx">
+      <DependentUpon>202409181355280_updateTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202409172117011_AddAssignmentsTable.resx">
-      <DependentUpon>202409172117011_AddAssignmentsTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409181359041_updateTables.resx">
+      <DependentUpon>202409181359041_updateTables.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202409172128269_UpdateStudentsTable.resx">
-      <DependentUpon>202409172128269_UpdateStudentsTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202409181405439_oneTomanyTables.resx">
+      <DependentUpon>202409181405439_oneTomanyTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409181409168_updateTableeesss.resx">
+      <DependentUpon>202409181409168_updateTableeesss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409191023535_InitialCreate.resx">
+      <DependentUpon>202409191023535_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
